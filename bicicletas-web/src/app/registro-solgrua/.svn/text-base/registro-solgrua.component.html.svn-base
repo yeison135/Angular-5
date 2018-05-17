@@ -1,0 +1,38 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">Menu</li>
+  <li class="breadcrumb-item active">Sub Menu</li>
+</ol>
+<div class="row title-inner">
+  <div class="col-12">
+    <h3>Registrar solicitud de grúa</h3>
+    <p class="text-muted">Solicitudes de grúa</p>
+  </div>
+</div>
+
+<div class="row row-inner">
+  <div class="col-md-10">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Tipo orden de servicio</label>
+          <select id="inputState" class="form-control">
+        <option selected>Elija una opción</option>
+        <option >...</option>
+      </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Tipo servicio de traslado</label>
+          <select id="inputState" class="form-control">
+        <option selected>Elija una opción</option>
+        <option *ngFor="let tipoTras of tiposTraslado">{{tipoTras.nombre}}</option>
+      </select>
+        </div>
+      </div>
+
+      <div class="end-button">
+        <a class="cancel-link"> Cancelar </a> 
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </div>
+    </form>
+  </div>
+</div>
